@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/show_pressure_settings_key"
+        android:summaryOff="@string/hided"
+        android:summaryOn="@string/shown"
+        android:title="@string/show_pressure_settings_label"/>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/show_wind_settings_key"
+        android:summaryOff="@string/hided"
+        android:summaryOn="@string/shown"
+        android:title="@string/show_wind_settings_label"/>
+
+    <ListPreference
+        android:defaultValue="@string/pref_color_red_value"
+        android:entries="@array/pref_color_option_labels"
+        app:entryValues="@array/pref_color_option_values"
+        android:key="@string/pref_color_key"
+        android:title="@string/pref_color_label"/>
+
+</PreferenceScreen>
